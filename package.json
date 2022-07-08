@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/qsus/hyperphish-discord-bot/issues"
   },
-  "homepage": "https://github.com/qsus/hyperphish-discord-bot#readme"
+  "homepage": "https://github.com/qsus/hyperphish-discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^13.8.1",
+    "request": "^2.88.2"
+  }
 }
