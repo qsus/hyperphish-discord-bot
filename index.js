@@ -55,5 +55,5 @@ client.on("messageCreate", async function(message) {
 });
 
 
-
+console.log(process.env);
 client.login(process.env.token);
