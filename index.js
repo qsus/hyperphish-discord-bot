@@ -3,12 +3,9 @@ const request = require("request");
 // import settings
 // discord
 const config = require("./config.json");
-const token = config.token;
-const prefix = config.prefix;
 // scam detect
 links = ["app-nitro.com"] // blank array of links to begin with (except one demo link)
 const regex = /(?:http|ftp|https):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))/g // TODO: move to config
-const sampleString = "http://www.google.com/, http://yahoo.com, http://www."
 const url = config.apiURL
 const interval = config.updateLinksInterval * 1000
 // set link auto updater
@@ -37,7 +34,7 @@ const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
 
 client.on("messageCreate", async function(message) {
 	// non-breaking module: ping command
-	if (message.content.startsWith(prefix + "ping")) {
+	if (message.content.startsWith("scam ping")) {
 		const timeTaken = Date.now() - message.createdTimestamp;
 		message.channel.send(`Pong! It took me ${timeTaken}ms to respond.`);
 	}
@@ -59,4 +56,4 @@ client.on("messageCreate", async function(message) {
 
 
 
-client.login(token);
+client.login(process.env.token);
