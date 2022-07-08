@@ -1,0 +1,19 @@
+{
+  "name": "hyperphish-discord-bot",
+  "version": "1.0.0",
+  "description": "Get rid of scammers trying to steal users discord credentials / money on your server by sending fake phishing links!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qsus/hyperphish-discord-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qsus/hyperphish-discord-bot/issues"
+  },
+  "homepage": "https://github.com/qsus/hyperphish-discord-bot#readme"
+}
