@@ -1,0 +1,8 @@
+[Service]
+#User=
+#Group=
+ExecStart=tmux new -d -s hyperphish "node index.js; bash"
+ExecStop=tmux kill-session -t hyperphish
+RemainAfterExit=yes
+RootDirectory=/
+WorkingDirectory=/home/USERNAME/hyperphish-discord-bot/
